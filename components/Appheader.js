@@ -10,44 +10,44 @@ const Appheader = ({ navigator }) =>
   const { user } = useAuth();
 
     return (
-        <View style={{backgroundColor: '#fff'}}>
-          <SafeAreaView style={{backgroundColor: "#fff"}}>
+        <View style={{backgroundColor: '#e2e5e7'}}>
+          <SafeAreaView style={{backgroundColor: "#e2e5e7"}}>
               <View style={{backgroundColor: "#fff", flexDirection: 'row', marginTop: 10}}>
-                  <Text style={{fontWeight: "bold", fontSize: 24, color: "#fff", marginRight: 10, marginLeft: 8, fontFamily: 'NotoSerif_400Regular', backgroundColor: '#000'}}> WOMEN </Text>
-                  <Text style={{fontWeight: "bold", fontSize: 24, color: "#000", fontFamily: 'NotoSerif_400Regular', backgroundColor: '#fff', marginRight: 10}}>MEN</Text>
-                  <Text style={{fontWeight: "bold", fontSize: 24, color: "#000", fontFamily: 'NotoSerif_400Regular', backgroundColor: '#fff'}}>BEAUTY</Text>   
+                  <Text style={{fontWeight: "bold", fontSize: 24, color: "", marginRight: 10, marginLeft: 8, fontFamily: 'NotoSerif_400Regular', backgroundColor: ''}}> WOMEN </Text>
+                  <Text style={{fontWeight: "bold", fontSize: 24, color: "gray", fontFamily: 'NotoSerif_400Regular', backgroundColor: '', marginRight: 10}}>MEN</Text>
+                  <Text style={{fontWeight: "bold", fontSize: 24, color: "gray", fontFamily: 'NotoSerif_400Regular', backgroundColor: ''}}>BEAUTY</Text>   
               </View>
     
-              <View style={{backgroundColor: "#000"}}>
+              <View style={{backgroundColor: ""}}>
                   <View style={styles.header}>
-                <FontAwesome name="navicon" size={24} color="white" />
+                <FontAwesome name="navicon" size={24} color="gray" />
                 <View style={{flexDirection:'row', alignItems:'flex-start'}}>
                 <Text style={{
-                  fontSize: 23,
-                  color: '#fff',
+                  fontSize: 27,
+                  color: '',
                   fontFamily: 'Poppins_700Bold_Italic',
                   letterSpacing: -1.8,
                   paddingLeft: 15,
                 }}>
-                  SKERBEL APPARELS
+                  Wear Ethical
                 </Text>
-                
-                <AntDesign name="trademark" size={10} color="rgb(235,235,235)" />
-                </View>
-                                  
+              </View>
+
               <View style={{ flexDirection: 'row' }}>
                   <TouchableOpacity onPress={()=> user ? navigator("MyAccount") : navigator('LoginPage')}>
-                      <AntDesign name="user" size={24} color="white" style={{ marginRight: 10 }} />
+                    <FontAwesome name="search" size={24} color="gray" style={{ marginRight: 10 }} />
                   </TouchableOpacity>
-                      <TouchableOpacity onPress={()=>navigator('Bag')}>
-                        <FontAwesome name="shopping-bag" size={24} color="white" />
-                      </TouchableOpacity>
-                    </View>              
-                  </View>            
-                </View>
-              </SafeAreaView>
+                  <TouchableOpacity onPress={()=> user ? navigator("MyAccount") : navigator('LoginPage')}>
+                      <AntDesign name="user" size={24} color="gray" style={{ marginRight: 10 }} />
+                  </TouchableOpacity>
+                  <TouchableOpacity onPress={()=>navigator('Bag')}>
+                    <FontAwesome name="shopping-bag" size={24} color="gray" />
+                  </TouchableOpacity>
+                </View>              
+              </View>            
+            </View>
+          </SafeAreaView>
         </View>
-                
     );
 }
 const styles = StyleSheet.create({

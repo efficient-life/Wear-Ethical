@@ -31,8 +31,7 @@ const Bag = ({ navigation }) =>
                         {/* <FontAwesome name={isFavorite ? "heart" : "heart-o"} size={27} color={'#7770'} /> */}
                         <TouchableOpacity onPress={()=>navigation.navigate('HomePage', storeItems)}>
                             <View style={{flexDirection:'row', alignItems:'flex-start'}}>
-                                <Text style={{fontSize: 22, fontFamily: 'Poppins_700Bold_Italic', letterSpacing:-1.8}}>SKERBEL APPARELS</Text>
-                                <Text style={{fontSize: 14}}>®️</Text>
+                                <Text style={{fontSize: 22, fontFamily: 'Poppins_700Bold_Italic', letterSpacing:-1.8}}>Wear Ethical</Text>
                             </View>
                         </TouchableOpacity>
                         <View style={{flexDirection: "row"}}>

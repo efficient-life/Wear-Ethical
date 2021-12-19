@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { StyleSheet, Text, View, SafeAreaView, FlatList, Dimensions, Image, TouchableWithoutFeedback, TouchableOpacity, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, FlatList, Dimensions, Image, TouchableWithoutFeedback, TouchableOpacity, ScrollView, ImageBackground } from 'react-native';
 import { FontAwesome, AntDesign } from '@expo/vector-icons';
 import cardItemList  from '../Consts/cardItemList';
 import Appheader from '../components/Appheader';
@@ -24,7 +24,7 @@ const CardItem =({cardItemList, onPressed}) =>{
 
            <View style={{flexDirection: 'row', justifyContent: 'space-between', marginTop: 5}}>
              <Text style={{fontWeight: 'bold'}}>
-               ${cardItemList.price}
+               {cardItemList.price}円
              </Text>
            </View>
            <TouchableOpacity onPress={()=>setIsFavorite(!isFavorite)} >   
@@ -43,8 +43,9 @@ const CardItem =({cardItemList, onPressed}) =>{
 
 const HomePage = ({navigation}) => {
   return (
-    <View style={{flex: 1, backgroundColor: '#fff'}}>
-      <SafeAreaView style={{backgroundColor: "#fff"}}>
+    <ImageBackground source={require('../assets/home.png')} resizeMode="cover">
+    <View style={{flex: 1, backgroundColor: ''}}>
+      <SafeAreaView style={{backgroundColor: "#e2e5e7"}}>
           <Appheader navigator={navigation.navigate} />
           {/* <View style={{paddingHorizontal: 10, paddingVertical: 10, flexDirection: 'row', justifyContent: "space-between"}}>
             <View style={{...styles.rectangleView, marginRight: 10}}>
@@ -58,7 +59,7 @@ const HomePage = ({navigation}) => {
               </Text>
             </View>
           </View> */}
-        </SafeAreaView>
+      </SafeAreaView>
       <FlatList 
           style={{paddingHorizontal: 5, paddingBottom: 100, flex: 1}} 
           showsVerticalScrollIndicator={false}
@@ -70,7 +71,7 @@ const HomePage = ({navigation}) => {
           data={cardItemList} 
           renderItem={({item}) => <CardItem cardItemList={item} onPressed={()=>navigation.navigate("SinglePage", item)} />} />
     </View>
-
+    </ImageBackground>
   )
 }
 

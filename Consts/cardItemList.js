@@ -2,7 +2,7 @@ const storeItems = [
     {
       id: 1,
       name: 'Pre Plucked Virgin Hair Body Wave HD Lace Closure Wig',
-      price: '200.99',
+      price: '2009',
       favorite: true,
     images:
     {
@@ -22,7 +22,7 @@ const storeItems = [
    {
       id: 2,
       name: 'T-Shirts for Men | Round Neck with graphic front',
-      price: '235.99',
+      price: '2359',
       favorite: false,
      images: {
        imageMain: require('../assets/11.png'),
@@ -40,7 +40,7 @@ const storeItems = [
     {
       id: 3,
       name: 'T-Shirts for Men | Round Neck with graphic front',
-      price: '235.99',
+      price: '2359',
       favorite: false,
       images: {
         imageMain: require('../assets/lightBrownShirt.webp'),
@@ -58,7 +58,7 @@ const storeItems = [
     {
       id: 4,
       name: 'Pre Plucked | brazillian body curls - bundles',
-      price: '235.99',
+      price: '2359',
       favorite: false,
       images: {
         imageMain: require('../assets/12.png'),
@@ -77,7 +77,7 @@ const storeItems = [
     {
       id: 5,
       name: 'Hand-made frontal wig | Human virgin hair',
-      price: '125.99',
+      price: '1259',
       favorite: false,
       images: {
         imageMain: require('../assets/4.png'),
@@ -95,7 +95,7 @@ const storeItems = [
     {
       id: 6,
       name: 'Brazillian fringe - Pure Virgin Hair',
-      price: '500.99',
+      price: '5009',
       favorite: true,
       images: {
         imageMain: require('../assets/5.png'),
@@ -114,7 +114,7 @@ const storeItems = [
     {
       id: 7,
       name: 'Classic T-Shirt For men - Black buttons',
-      price: '150.99',
+      price: '1509',
       favorite: true,
       images: {
         imageMain: require('../assets/blueShirt.webp'),
@@ -133,7 +133,7 @@ const storeItems = [
     {
       id: 8,
       name: 'Virgin Fringe - Tanious Hair wig',
-      price: '150.99',
+      price: '1509',
       favorite: false,
       images: {
         imageMain: require('../assets/6.png'),
@@ -151,7 +151,7 @@ const storeItems = [
     {
       id: 9,
       name: 'Silky Straight Human Hair Full Lace Wig',
-      price: '290.99',
+      price: '2909',
       favorite: false,
       images: {
         imageMain: require('../assets/8_Black.png'),
@@ -169,7 +169,7 @@ const storeItems = [
     {
       id: 10,
       name: 'Silky Straight Human Hair Full Lace Wig',
-      price: '290.99',
+      price: '2909',
       favorite: true,
       images: {
         imageMain: require('../assets/8_Black.png'),
